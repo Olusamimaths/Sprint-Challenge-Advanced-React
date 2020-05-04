@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import PlayerLists from './Components/PlayerLists'
 import './App.css';
 
 class App extends Component {
@@ -23,11 +23,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        {this.state.players.map(player => (
-          <p key={player.name}>{player.name}</p>
-        ))}
-      </div>
+      <PlayerLists players={this.state.players} />
     )
   }
 }
