@@ -7,7 +7,7 @@ const useStyles = makeStyles({
   root: {
     padding: "2rem",
     flexWrap: "wrap",
-    display: "row",
+    display: "row"
   },
 });
 
@@ -16,7 +16,7 @@ function PlayerLists({ players }) {
   return (
     <Grid container className={classes.root} spacing={3}>
       {players.map(({ name, country, searches, id }) => (
-        <Grid item key={id} xs={6} sm={4} md={3} lg={3} xl={3}>
+        <Grid item key={id} xs={12} sm={6} md={4} lg={3} xl={3}>
           <PlayerCard
             key={id}
             name={name}
